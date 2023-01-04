@@ -41,8 +41,21 @@ const questions = [
       choices: ['The MIT License', 'The GPL Liscense', 'Apache Liscense', 'N/A']
       validate: (value)=>{if(value){return true} else {return 'I need a value to continue'}},
     },
+    {
+      type: 'input',
+      message: 'GitHub username:',
+      name: 'git',
+      validate: (value)=>{if(value){return true} else {return 'I need a value to continue'}},
+    },
+    {
+      type: 'input',
+      message: 'E-mails',
+      name: 'email',
+      validate: (value)=>{if(value){return true} else {return 'I need a value to continue'}},
+    }
+]
 
-];
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
